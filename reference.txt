@@ -1,0 +1,4 @@
+https://www.olivieraubert.net/vlc/python-ctypes/doc/
+https://wiki.videolan.org/python_bindings
+https://blog.csdn.net/avsuper/article/details/80145439
+https://zhuanlan.zhihu.com/p/69906080
