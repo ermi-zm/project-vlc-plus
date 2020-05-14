@@ -7,6 +7,7 @@ class PlayerTop:
         self.playerlist = [None] * public_value.CONSTANT.PALYER_NUM
         for key in range(public_value.CONSTANT.PALYER_NUM):
             self.playerlist[key] = player.Player()
+            self.playerlist[key].set_volume(0)
 
     def play_start(self):
 

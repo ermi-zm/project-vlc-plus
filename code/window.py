@@ -54,14 +54,20 @@ class CreateWindows(tk.Tk):
         monitor.check_color(self)
 
         for num in range(public_value.CONSTANT.PALYER_NUM):
-            if public_value.VARIABLE.COLOUR_LSIT[num]=="黑场！！！":
-                self.lablelist[num].configure(text="黑场！！！",bg="red")
+
+            if public_value.VARIABLE.COLOUR_LSIT[num] == "黑场故障":
+                self.lablelist[num].configure(text="黑场故障", bg="red")
+
+            elif public_value.VARIABLE.COLOUR_LSIT[num]=="彩条故障":
+                self.lablelist[num].configure(text="彩条故障", bg="#8E2DE2")
+                print(time.strftime('%H:%M:%S'),"彩条故障")
+                public_value.Voice.start_warning_voice()
             else:
                 self.lablelist[num].configure(text="播出正常", bg="green")
                 self.lablelist[num].tkraise()
 
 
-        self.after(2000, lambda: self.refresh_windows())  # 进程500毫秒触发一次
+        self.after(500, lambda: self.refresh_windows())  # 进程500毫秒触发一次
 
     def transmit_player(self,list):
 
