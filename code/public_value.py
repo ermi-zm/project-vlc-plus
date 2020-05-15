@@ -2,7 +2,7 @@ import threading
 import winsound
 class CONSTANT:
     PALYER_NUM=4
-    PALYER_LINK=["../../test.ts","../../test.mp4","","","","","","","",""]
+    PALYER_LINK=["udp://@225.168.130.14:3014","udp://@225.177.130.12:3012","udp://@225.168.160.19:3019","udp://@225.168.130.16:3016","","","","","",""]
 
 class VARIABLE:
     COLOUR_LSIT=[None]* CONSTANT.PALYER_NUM
